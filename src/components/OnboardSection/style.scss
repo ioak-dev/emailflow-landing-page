@@ -1,0 +1,40 @@
+.onboard-section {
+  padding: 100px 0;
+  .onboard-section--container {
+    display: grid;
+    grid-auto-flow: row;
+    row-gap: 30px;
+
+    .onboard-section--container--steps {
+      width: 90%;
+      margin: auto;
+      display: grid;
+      grid-auto-flow: row;
+      row-gap: 40px;
+    }
+  }
+}
+
+.onboard-sectiontile {
+  display: grid;
+  grid-auto-flow: column;
+  column-gap: 20px;
+  justify-content: flex-start;
+  .onboard-sectiontile--left {
+    .onboard-sectiontile--left--step-number {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      border: 2px dotted grey;
+      height: 30px;
+      width: 30px;
+      border-radius: 20px;
+    }
+  }
+  .onboard-sectiontile--right {
+    display: grid;
+    grid-auto-flow: row;
+    // justify-content: flex-start;
+    row-gap: 10px;
+  }
+}
