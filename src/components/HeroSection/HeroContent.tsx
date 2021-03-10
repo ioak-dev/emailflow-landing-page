@@ -20,8 +20,8 @@ export default function HeroContent(props: Props) {
     <div className="hero-content">
       <h1
         className="heading--1 hero-content--title"
-        dangerouslySetInnerHTML={{ __html: props.data.title }}
-      />
+        dangerouslySetInnerHTML={{ __html: props.data.title }}/>
+      <p dangerouslySetInnerHTML={{ __html: props.data.subtitle }}></p>
       <div className="hero-content--cta">
         <CallToAction data={props.data.callToAction} theme="primary" />
       </div>

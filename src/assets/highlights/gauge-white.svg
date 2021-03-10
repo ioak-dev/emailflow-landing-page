@@ -1,0 +1,8 @@
+<svg id="Layer_1" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32.2 32">
+	<path d="M26.1,27.3a14.1,14.1,0,0,0,4.2-10.1,14.3,14.3,0,0,0-28.6,0A14.1,14.1,0,0,0,5.9,27.3" fill="none" stroke="#fff" stroke-miterlimit="10" stroke-width="1.5"/>
+	<line x1="15.9" y1="17.1" x2="26.1" y2="6.9" fill="none" stroke="#fff" stroke-miterlimit="10" stroke-width="1.5"/>
+	<circle cx="16.1" cy="17" r="2.5" fill="#fff"/>
+	<circle cx="25.9" cy="6.9" r="2.5" fill="#fff"/>
+	<circle cx="26.3" cy="27" r="2.5" fill="#ff3a4b" stroke="none"/>
+	<circle cx="5.9" cy="27" r="2.5" fill="#00b4f0" stroke="none"/>
+</svg>

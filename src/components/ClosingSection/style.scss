@@ -1,15 +1,16 @@
 .closing-section {
   padding: 100px 0;
-  background-image: linear-gradient(
-    69.7deg,
-    rgba(216, 81, 82, 1) 40%,
-    rgba(154, 27, 69, 1) 100.1%
-  );
-  background-image: radial-gradient(
-    circle farthest-corner at -14.3% -17.5%,
-    rgba(245, 168, 168, 1) 4%,
-    rgb(136, 139, 206) 100.2%
-  );
+  background-color: #21a39c;
+  // background-image: linear-gradient(
+  //   69.7deg,
+  //   rgba(216, 81, 82, 1) 40%,
+  //   rgba(154, 27, 69, 1) 100.1%
+  // );
+  // background-image: radial-gradient(
+  //   circle farthest-corner at -14.3% -17.5%,
+  //   rgba(245, 168, 168, 1) 4%,
+  //   rgb(136, 139, 206) 100.2%
+  // );
   .closing-section--container {
     display: grid;
     @media (min-width: 768px) {

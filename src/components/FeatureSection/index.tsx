@@ -7,10 +7,10 @@ export default function FeatureSection() {
   return (
     <div className="feature-section">
       <div className="feature-section--container column-layout">
-        <p className="feature-section--container--title">{content.title}</p>
+        {/* <p className="feature-section--container--title">{content.title}</p>
         <p className="feature-section--container--subtitle">
           {content.description}
-        </p>
+        </p> */}
         <div className="feature-section--container--list">
           {content.data.map(item => (
             <SectionTile data={item} key={item.title} />

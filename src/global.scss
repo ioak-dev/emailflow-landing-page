@@ -1,12 +1,15 @@
 @import url("https://fonts.googleapis.com/css?family=Roboto|Montserrat|Open+Sans|Open+Sans+Condensed:300&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Work+Sans:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,400;1,500&display=swap");
+// @import url("https://fonts.googleapis.com/css2?family=Work+Sans:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500&display=swap");
+// @import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,400;1,500&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,wght@0,200;0,300;0,400;0,600;0,700;0,800;0,900;1,200;1,300;1,400;1,600;1,700;1,800;1,900&display=swap');
 @import "../node_modules/@fortawesome/fontawesome-free/css/all.min.css";
 
 * {
   --color-header: #564f70;
-  --color-footer: #564f70;
-  --color-primary-1: #6f668f;
+  --color-footer: #e75650;
+  --color-footer-bottom: #d04e48;
+  // --color-primary-1: #6f668f;
+  --color-primary-1: #425cc7;
   --color-primary-2: #5c5577;
   --color-secondary-1: #efac78;
   --color-secondary-2: #fdf2ea;
@@ -28,7 +31,7 @@
   --color-foreground-5: #2f3136;
   margin: 0;
   padding: 0;
-  font-family: "Work Sans", sans-serif;
+  font-family: "Nunito Sans", sans-serif;
   word-break: break-word;
   line-height: 1.8;
   font-weight: 300;

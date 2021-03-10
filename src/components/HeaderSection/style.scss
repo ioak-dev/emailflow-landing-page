@@ -1,7 +1,12 @@
 .header-section {
   display: flex;
-  justify-content: center;
   padding: 10px 0;
+  @media (min-width: 768px) {//for desktop and tablets
+    margin: 0 40px;
+  }
+  @media (max-width: 767px) { //for mobile
+    margin: 0 10px;
+  }
   img {
     height: 40px;
   }

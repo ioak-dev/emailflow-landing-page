@@ -14,6 +14,9 @@ export default function HeroSection() {
           <OakAnimateElement direction="up">
             <HeroContent data={content} />
           </OakAnimateElement>
+          <OakAnimateElement direction="up">
+            <img className="hero-image" src={require(`../../assets/${content.image}`)} />
+          </OakAnimateElement>
         </div>
       </div>
     </div>

@@ -15,20 +15,20 @@
   //   ),
   //   url("../../assets/illustration/hero.svg");
   // url("../../assets/hero.jpg");
-  background-image: linear-gradient(
-      109.8deg,
-      rgba(62, 5, 116, 0.4) -5.2%,
-      rgba(41, 14, 151, 0.5) -5.2%,
-      rgba(216, 68, 148, 0.4) 103.3%
-    ),
-    url("../../assets/illustration/hero.svg");
+  // background-image: linear-gradient(
+  //     109.8deg,
+  //     rgba(62, 5, 116, 0.4) -5.2%,
+  //     rgba(41, 14, 151, 0.5) -5.2%,
+  //     rgba(216, 68, 148, 0.4) 103.3%
+  //   ),
+  //   url("../../assets/illustration/hero.svg");
 
-  background-image: linear-gradient(
-      111.3deg,
-      rgba(74, 105, 187, 0.9) 9.6%,
-      rgba(216, 68, 148, 0.4) 103.3%
-    ),
-    url("../../assets/illustration/hero.svg");
+  // background-image: linear-gradient(
+  //     111.3deg,
+  //     rgba(74, 105, 187, 0.9) 9.6%,
+  //     rgba(216, 68, 148, 0.4) 103.3%
+  //   ),
+  //   url("../../assets/illustration/hero.svg");
   //   url("../../assets/hero.jpg");
   // background-image: linear-gradient(
   //     109.6deg,
@@ -36,6 +36,8 @@
   //     rgba(168, 141, 194, 0.8) 99.9%
   //   ),
   //   url("../../assets/hero.jpg");
+  background-color: var(--color-footer);
+  background-image: linear-gradient(180deg,transparent 0,transparent 64%,#ec655f 0,#e6504b);
   background-repeat: no-repeat;
   background-attachment: fixed;
   // background-size: cover;
@@ -45,9 +47,26 @@
     margin: auto;
     display: grid;
     grid-template-rows: auto 1fr;
-    padding: 0 100px;
-    @media (max-width: 767px) {
-      padding: 0 10px;
+    // padding: 0 100px;
+    padding: 0;
+    @media (max-width: 767px) { //for mobile
+      padding: 0;
+    }
+    .hero-section--container--content {
+      display: grid;
+      .hero-image {
+        max-width: 100%;
+      }
+      @media (min-width: 768px) {//for desktop and tablets
+        margin: 5% auto;
+        grid-template-columns: 1fr 1fr;
+        max-width: 75%;
+      }
+      @media (max-width: 767px) { //for mobile
+        grid-auto-flow: row;
+        max-width: 80%;
+        margin: 20px auto;
+      }
     }
   }
 }
@@ -57,8 +76,22 @@
   display: grid;
   grid-auto-flow: row;
   row-gap: 20px;
-  align-content: center;
-  text-align: center;
+  // align-content: center;
+  // text-align: center;
+  h1 {
+    font-size: calc(24px + 3.33333vw);
+    font-family: AvenirNext,sans-serif;
+    letter-spacing: -.01em;
+    line-height: 1.1;
+    margin-bottom: 20px;
+  }
+  p {
+    font-size: calc(16.85714px + .35714vw);
+    font-family: AvenirNext,sans-serif;
+    font-weight: 300;
+    line-height: 1.6;
+    max-width: 450px
+  }
 }
 
 .hero-illustration {

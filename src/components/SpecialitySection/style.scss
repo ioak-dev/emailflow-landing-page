@@ -1,6 +1,51 @@
 .speciality-section {
-  padding-top: 160px;
-  padding-bottom: 160px;
   text-align: center;
   background-color: #f8faff;
+  @media (min-width: 768px) {//for desktop and tablets
+    padding-top: 60px;
+    padding-bottom: 160px;
+  }
+  @media (max-width: 767px) { //for mobile
+    padding-top: 20px;
+    padding-bottom: 40px;
+  }
+  .speciality-section--container {
+    display: grid;
+    margin: auto;
+    @media (min-width: 768px) {//for desktop and tablets
+      width: 80%;
+      grid-template-columns: 1fr 1fr 1fr;
+      column-gap: 60px;
+    }
+    @media (max-width: 767px) { //for mobile
+      width: 100%;
+      grid-template-columns: 1fr;
+      row-gap: 20px;
+    }
+    .sectiontile {
+      display: grid;
+      grid-auto-flow: row;
+      align-content: flex-start;
+      text-align: left;
+      justify-items: flex-start;
+      @media (max-width: 767px) { //for mobile
+        padding: 10px;
+      }
+      svg {
+        color: var(--color-primary-1);
+      }
+      &:nth-of-type(1) {
+        border-left: none;
+      }
+      button {
+        background-color: var(--color-primary-1);
+        margin: 16px 0;
+      }
+      img {
+        width: 75px;
+        aspect-ratio: auto 75 / 75;
+        margin: 10px 0;
+      }
+    }
+  }
 }

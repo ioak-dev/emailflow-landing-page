@@ -25,14 +25,14 @@ const IndexPage = () => (
     {/* <Link to="/page-2/">Go to page 2</Link> <br /> */}
     <HeroSection />
     <SpecialitySection data={highlightContentOne} />
-    {/* <KeySection /> */}
     <FeatureSection />
-    <SpecialitySection data={highlightContentTwo} direction="left" />
+    {/* <SpecialitySection data={highlightContentTwo} direction="left" /> */}
     {/* <OnboardSection /> */}
-    <ContactSection />
+    <KeySection />
+    {/* <ContactSection /> */}
     {/* <FaqSection /> */}
-    <ClosingSection />
-    <SpecialitySection data={highlightContentThree} direction="right" />
+    {/* <ClosingSection /> */}
+    {/* <SpecialitySection data={highlightContentThree} direction="right" /> */}
     <FooterSection />
     <CopyrightSection />
   </div>

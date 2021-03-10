@@ -6,7 +6,8 @@ import content from "../../assets/content/KeySection.json"
 export default function KeySection() {
   return (
     <div className="key-section">
-      <div className="key-section--container column-layout">
+      <h1>{content.title}</h1>
+      <div className="key-section--container">
         {content.data.map(item => (
           <SectionTile data={item} key={item.title} />
         ))}
