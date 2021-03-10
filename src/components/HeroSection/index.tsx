@@ -11,12 +11,19 @@ export default function HeroSection() {
       <div className="hero-section--container column-layout">
         <HeaderSection />
         <div className="hero-section--container--content">
+          <div className="mobile-only">
+            <OakAnimateElement direction="up">
+              <img className="hero-image" src={require(`../../assets/${content.image}`)} />
+            </OakAnimateElement>
+          </div>
           <OakAnimateElement direction="up">
             <HeroContent data={content} />
           </OakAnimateElement>
-          <OakAnimateElement direction="up">
-            <img className="hero-image" src={require(`../../assets/${content.image}`)} />
-          </OakAnimateElement>
+          <div className="desktop-only">
+            <OakAnimateElement direction="up">
+              <img className="hero-image" src={require(`../../assets/${content.image}`)} />
+            </OakAnimateElement>
+          </div>
         </div>
       </div>
     </div>
