@@ -13,12 +13,17 @@
   // );
   .closing-section--container {
     display: grid;
-    @media (min-width: 768px) {
+    @media (min-width: 1024px) { //for desktops
       grid-template-columns: 1fr 1fr;
       align-items: center;
       column-gap: 20px;
     }
-    @media (max-width: 767px) {
+    @media (min-width: 768px) and (max-width: 1024px) { //for tablets
+      grid-template-columns: 1fr 1fr;
+      align-items: center;
+      column-gap: 20px;
+    }
+    @media (max-width: 768px) { //for mobile
       grid-auto-flow: row;
       row-gap: 20px;
       justify-content: center;

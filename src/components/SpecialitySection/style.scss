@@ -1,23 +1,33 @@
 .speciality-section {
   text-align: center;
   background-color: #f8faff;
-  @media (min-width: 768px) {//for desktop and tablets
+  @media (min-width: 1024px) { //for desktops
     padding-top: 60px;
     padding-bottom: 160px;
   }
-  @media (max-width: 767px) { //for mobile
+  @media (min-width: 768px) and (max-width: 1024px) { //for tablets
+    padding-top: 40px;
+    padding-bottom: 80px;
+  }
+  @media (max-width: 768px) { //for mobile
     padding-top: 20px;
     padding-bottom: 40px;
   }
   .speciality-section--container {
     display: grid;
     margin: auto;
-    @media (min-width: 768px) {//for desktop and tablets
-      width: 80%;
+    @media (min-width: 1024px) { //for desktops
+      width: 75%;
       grid-template-columns: 1fr 1fr 1fr;
       column-gap: 60px;
     }
-    @media (max-width: 767px) { //for mobile
+    @media (min-width: 768px) and (max-width: 1024px) { //for tablets
+      width: 100%;
+      grid-template-columns: 1fr 1fr 1fr;
+      column-gap: 60px;
+      padding: 0 40px;
+    }
+    @media (max-width: 768px) { //for mobile
       width: 100%;
       grid-template-columns: 1fr;
       row-gap: 20px;
@@ -28,7 +38,7 @@
       align-content: flex-start;
       text-align: left;
       justify-items: flex-start;
-      @media (max-width: 767px) { //for mobile
+      @media (max-width: 768px) { //for mobile
         padding: 10px;
       }
       svg {

@@ -17,7 +17,10 @@
   grid-auto-flow: row;
   row-gap: 20px;
 
-  @media (min-width: 768px) {
+  @media (min-width: 1024px) { //for desktops
+    width: 80%;
+  }
+  @media (min-width: 768px) and (max-width: 1024px) { //for tablets
     width: 80%;
   }
   form {
@@ -28,11 +31,15 @@
   .contact-form--action {
     display: grid;
     justify-content: center;
-    @media (min-width: 768px) {
+    @media (min-width: 1024px) { //for desktops
       grid-auto-flow: column;
       column-gap: 20px;
     }
-    @media (max-width: 767px) {
+    @media (min-width: 768px) and (max-width: 1024px) { //for tablets
+      grid-auto-flow: column;
+      column-gap: 20px;
+    }
+    @media (max-width: 768px) { //for mobile
       grid-auto-flow: row;
       row-gap: 20px;
     }

@@ -19,7 +19,7 @@ export default function AppPreview() {
           alt="Janus board view"
         />
         <img
-          className="preview-mobile mobile-only"
+          className="preview-mobile tab-only mobile-only"
           src={imageBoardViewMobile}
           alt="Janus board view"
         />

@@ -1,17 +1,23 @@
 .feature-section {
   background-color: var(--color-primary-1);
-  @media (min-width: 768px) {//for desktop and tablets
+  @media (min-width: 1024px) { //for desktops
     padding: 120px 0;
   }
-  @media (max-width: 767px) { //for mobile
+  @media (min-width: 768px) and (max-width: 1024px) { //for tablets
+    padding: 80px 0;
+  }
+  @media (max-width: 768px) { //for mobile
     padding: 40px 0;
   }
   .feature-section--container {
     display: grid;
     grid-auto-flow: row;
     row-gap: 10px;
-    @media (min-width: 768px) {//for desktop and tablets
+    @media (min-width: 1024px) { //for desktops
       max-width: 1200px;
+    }
+    @media (min-width: 768px) and (max-width: 1024px) { //for tablets
+      padding: 0 40px;
     }
     .feature-section--container--title {
       text-transform: uppercase;
@@ -30,7 +36,7 @@
     .feature-section--container--list {
       display: grid;
       grid-auto-flow: row;
-      @media (max-width: 767px) { //for mobile
+      @media (max-width: 768px) { //for mobile
         row-gap: 20px;
         padding-top: 20px;
       }
@@ -40,12 +46,17 @@
 
 .feature-sectiontile {
   display: grid;
-  @media (min-width: 768px) {//for desktop and tablets
+  @media (min-width: 1024px) { //for desktops
     grid-template-columns: 1fr 1fr;
     align-items: center;
     column-gap: 50px;
   }
-  @media (max-width: 767px) { //for mobile
+  @media (min-width: 768px) and (max-width: 1024px) { //for tablets
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+    column-gap: 50px;
+  }
+  @media (max-width: 768px) { //for mobile
     grid-auto-flow: row;
     row-gap: 20px;
   }
@@ -60,12 +71,17 @@
       font-weight: bold;
       letter-spacing: -0.01em;
       line-height: 1.1;
-      @media (min-width: 768px) {//for desktop and tablets
+      @media (min-width: 1024px) { //for desktops
         font-size: 45px;
         line-height: 1.4;
         margin-bottom: 20px;
       }
-      @media (max-width: 767px) { //for mobile
+      @media (min-width: 768px) and (max-width: 1024px) { //for tablets
+        font-size: 45px;
+        line-height: 1.4;
+        margin-bottom: 20px;
+      }
+      @media (max-width: 768px) { //for mobile
         font-size: calc(28.88889px + 2.22222vw);
         margin-bottom: 10px;
       }
@@ -74,10 +90,13 @@
       font-size: 20px;
       font-family: AvenirNext, sans-serif;
       font-weight: 300;
-      @media (min-width: 768px) {//for desktop and tablets
+      @media (min-width: 1024px) { //for desktops
         line-height: 1.6;
       }
-      @media (max-width: 767px) { //for mobile
+      @media (min-width: 768px) and (max-width: 1024px) { //for tablets
+        line-height: 1.5;
+      }
+      @media (max-width: 768px) { //for mobile
         line-height: 1.4;
       }
     }
@@ -90,11 +109,11 @@
       border-radius: 999rem;
       display: flex;
       overflow: hidden;
-      // @media (min-width: 768px) {//for desktop and tablets
+      // @media (min-width: 1024px) { //for desktops
       //   width: 500px;
       //   height: 500px;
       // }
-      // @media (max-width: 767px) { //for mobile
+      // @media (max-width: 768px) { //for mobile
       //   width: 250px;
       //   height: 250px;
       // }

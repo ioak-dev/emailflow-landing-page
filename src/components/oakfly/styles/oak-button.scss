@@ -6,7 +6,7 @@ button {
     border-radius: 4px;
     // height: var(--metric-formelement-height);
     white-space: nowrap;
-    @media (max-width: 767px) {
+    @media (max-width: 768px) { //for mobile
       // height: var(--metric-formelement-height-mobile);
     }
 
@@ -18,7 +18,7 @@ button {
       height: var(--metric-formelement-height);
       line-height: var(--metric-formelement-height);
       white-space: nowrap;
-      @media (max-width: 767px) {
+      @media (max-width: 768px) { //for mobile
         height: var(--metric-formelement-height-mobile);
         line-height: var(--metric-formelement-height-mobile);
       }

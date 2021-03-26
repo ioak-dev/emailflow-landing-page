@@ -16,16 +16,20 @@
   .footer-section--container {
     display: grid;
     justify-content: center;
-    width: 90vw;
-    margin: auto;
-    @media (min-width: 768px) {
+    width: 75%;
+    @media (min-width: 1024px) { //for desktops
       grid-template-columns: 1fr 1fr 1fr;
       column-gap: 20px;
       justify-items: center;
+      margin: auto;
     }
-    @media (max-width: 767px) {
+    @media (min-width: 768px) and (max-width: 1024px) { //for tablets
+      margin: 0 40px;
+    }
+    @media (max-width: 768px) { //for mobile
       grid-auto-flow: row;
       row-gap: 60px;
+      margin: 0 20px;
     }
   }
 }

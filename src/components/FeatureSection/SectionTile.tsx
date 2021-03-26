@@ -24,7 +24,7 @@ export default function SectionTile(props: Props) {
         </div>
       )}
 
-      <div className="feature-sectiontile--illustration-wrapper mobile-only">
+      <div className="feature-sectiontile--illustration-wrapper tab-only mobile-only">
         <OakAnimateElement direction="right">
           <div className="feature-sectiontile--illustration">
             <img src={require(`../../assets/${props.data.image}`)} />
@@ -39,7 +39,7 @@ export default function SectionTile(props: Props) {
           </div>
         </OakAnimateElement>
       </div>
-      <div className=" mobile-only">
+      <div className="tab-only mobile-only">
         <OakAnimateElement direction="left">
           <div className="feature-sectiontile--content">
             <h3 className="heading--3">{props.data.title}</h3>

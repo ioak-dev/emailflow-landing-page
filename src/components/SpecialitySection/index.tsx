@@ -14,15 +14,13 @@ interface Props {
 export default function SpecialitySection(props: Props) {
   return (
     <div className="speciality-section">
-      <div className="column-layout">
-        <OakAnimateElement direction={props.direction || "down"}>
-          <div className="speciality-section--container">
-            {content.data.map(item => (
-              <SectionTile data={item} key={item.title} />
-            ))}
-          </div>
-        </OakAnimateElement>
-      </div>
+      <OakAnimateElement direction={props.direction || "down"}>
+        <div className="column-layout speciality-section--container">
+          {content.data.map(item => (
+            <SectionTile data={item} key={item.title} />
+          ))}
+        </div>
+      </OakAnimateElement>
     </div>
   )
 }

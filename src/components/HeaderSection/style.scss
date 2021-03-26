@@ -1,10 +1,13 @@
 .header-section {
   display: flex;
   padding: 10px 0;
-  @media (min-width: 768px) {//for desktop and tablets
+  @media (min-width: 1024px) { //for desktops
     margin: 0 40px;
   }
-  @media (max-width: 767px) { //for mobile
+  @media (min-width: 768px) and (max-width: 1024px) { //for tablets
+    margin: 0 40px;
+  }
+  @media (max-width: 768px) { //for mobile
     margin: 0 10px;
   }
   img {

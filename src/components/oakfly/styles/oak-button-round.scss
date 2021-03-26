@@ -6,7 +6,7 @@ button {
     border-radius: 30px;
     // height: var(--metric-formelement-height);
     white-space: nowrap;
-    @media (max-width: 767px) {
+    @media (max-width: 768px) { //for mobile
       // height: var(--metric-formelement-height-mobile);
     }
 
@@ -22,7 +22,7 @@ button {
       font-size: 20px;
       font-weight: 400;
       white-space: nowrap;
-      @media (max-width: 767px) {
+      @media (max-width: 768px) { //for mobile
         height: var(--metric-formelement-height-mobile);
         line-height: var(--metric-formelement-height-mobile);
       }

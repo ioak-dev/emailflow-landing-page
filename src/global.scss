@@ -45,7 +45,7 @@
     font-size: 55px;
     line-height: 1.5;
     font-weight: 200;
-    @media (max-width: 767px) {
+    @media (max-width: 768px) { //for mobile
       font-size: 40px;
     }
   }
@@ -54,7 +54,7 @@
     font-size: 38px;
     line-height: 1.5;
     font-weight: 300 !important;
-    @media (max-width: 767px) {
+    @media (max-width: 768px) { //for mobile
       font-size: 32px;
     }
   }
@@ -63,26 +63,33 @@
     font-size: 30px;
     line-height: 1.5;
     font-weight: 400;
-    @media (max-width: 767px) {
+    @media (max-width: 768px) { //for mobile
       font-size: 28px;
     }
   }
 
   .column-layout {
     padding: 0 100px;
-    @media (max-width: 767px) {
+    @media (max-width: 768px) { //for mobile
       padding: 0 20px;
     }
     margin: auto;
   }
 
   .mobile-only {
-    @media (min-width: 768px) {
+    @media (min-width: 1024px) { //for desktops
       display: none !important;
     }
   }
+
+  .tab-only {
+    @media (min-width: 768px) and (max-width: 1024px) { //for tablets
+      display: none !important;
+    }
+  }
+    
   .desktop-only {
-    @media (max-width: 767px) {
+    @media (max-width: 768px) { //for mobile
       display: none !important;
     }
   }

@@ -1,6 +1,6 @@
 .copyright-section {
   background-color: var(--color-footer-bottom);
-  @media (max-width: 767px) {
+  @media (max-width: 768px) { //for mobile
     // padding: 5px;
     font-size: 10px;
   }
@@ -15,10 +15,13 @@
     font-size: 14px;
     column-gap: 10px;
     color: var(--color-background-1);
-    @media (min-width: 768px) {//for desktop and tablets
+    @media (min-width: 1024px) { //for desktops
       width: calc(100vw - 40px);
     }
-    @media (max-width: 767px) { //for mobile
+    @media (min-width: 768px) and (max-width: 1024px) { //for tablets
+      width: calc(100vw - 40px);
+    }
+    @media (max-width: 768px) { //for mobile
     }
     &::before {
       position: absolute;

@@ -11,7 +11,7 @@ export default function HeroSection() {
       <div className="hero-section--container column-layout">
         <HeaderSection />
         <div className="hero-section--container--content">
-          <div className="mobile-only">
+          <div className="tab-only mobile-only">
             <OakAnimateElement direction="up">
               <img className="hero-image" src={require(`../../assets/${content.image}`)} />
             </OakAnimateElement>
